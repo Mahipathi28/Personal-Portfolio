@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/f5014619d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navigation bar */
+        #header {
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+            min-height: 50px;
+        }
+
+        ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes extra left padding */
+}
+
+
+        #header ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header ul li {
+            display: inline;
+        }
+
+        #header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 12px 15px;
+            transition: color 0.3s ease;
+        }
+
+        #header ul li a:hover {
+            color: #dfae10;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Prevent content from overlapping navbar */
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/abstract-blur-beautiful-pastel-color-summer-concept-blurred-defocused-effect-background_7182-23.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1708992000&semt=ais');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 80px; /* Push content below fixed navbar */
+        }
+
+        /* Work section styles */
+        .work-item {
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .work-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section Spacing */
+        section {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .social-media a {
+            font-size: 24px;
+            color: white;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #dfae10;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav id="header">
+        <ul>
+            <li><a href="#tohead">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="tohead">
+        <div id="head">
+            <h2>Hello, This is <span>Mahipathi Meghana</span></h2>
+            <h4>pursuing my bachelor's degree in computer science at SRM University</h4>
+            <h4>Web Developer</h4>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 style="color: purple;">About Me</h1>
+        <p>
+            <h4>This is Mahipathi Meghana.</h4>
+            <h4>I have completed my 10th standard With a GPA of 10/10 and 982/1000 in my intermediate.</h4>
+            <h4>I'm a friendly and creative person who loves to learn and explore new things and have special interest in learning coding.</h4>
+            <h4>I enjoy being kind and helpful to others, and I'm always up for a good conversation.</h4>
+            <h4>I have a passion for knowledge and enjoy sharing interesting facts and information.</h4>
+            <h4>I admire leadership qualities and aspire to develop them further.</h4>
+        </p>
+    </section>
+
+    <section id="work">
+        <h1 style="color: #2ecc71;">WORK</h1>
+        <div>
+            <div class="work-item" style="background-color: #2ecc71;">
+                <h4 style="color: #dfae10;">Part of Badminton Club</h4>
+                <p>Passionate about sports, especially Badminton.</p>
+            </div>
+            <div class="work-item" style="background-color: #e74c3c;">
+                <h4 style="color: #dfae10;">NPTEL Psychology of Learning</h4>
+                <p>Achieved top 2% gold medal in "Psychology of Learning" course by NPTEL.</p>
+            </div>
+            <div class="work-item" style="background-color: #9b59b6;">
+                <h4 style="color: #dfae10;">NPTEL Python Course</h4>
+                <p>Achieved top 5% silver medal in "The Joy of Computing Using Python" course by NPTEL.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1 style="color: #e74c3c; font-weight: bold;">SKILLS</h1>
+        <ul style="list-style-type: none; padding: 0;">
+            <li>C/C++</li>
+            <li>Data Structures</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>DBMS</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+    
+
+    <footer id="contact">
+        <div>
+            <h2 style="color: #3498db;">Contact Me</h2>
+            <p>Mobile: 8978757578</p>
+            <p>Email: <a href="mailto:meghana_mahipathi@srmap.edu.in" style="color: #dfae10;">meghana_mahipathi@srmap.edu.in</a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/mahipathi-meghana-399023259" class="fab fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/meghanamahipathi" class="fab fa-github" target="_blank"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
